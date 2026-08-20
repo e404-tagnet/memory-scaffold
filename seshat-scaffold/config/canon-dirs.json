@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "created": "2026-07-08",
+  "description": "Canonical directory contract. These dirs must exist. If any vanish, SESHAT PANIC.",
+  "rules": {
+    "panic_on_missing": true,
+    "log_on_change": true,
+    "sync_to_hermes": true
+  },
+  "directories": [
+    {
+      "id": "projects-root",
+      "path": "~/Dropbox/9-PROJECTS",
+      "type": "project",
+      "critical": true,
+      "machines": ["ag2i", "t480"],
+      "desc": "All project repositories and work"
+    },
+    {
+      "id": "pi-memory",
+      "path": "~/Dropbox/5-HOME/Workspace/pi_workspace",
+      "type": "memory",
+      "critical": true,
+      "machines": ["ag2i", "t480"],
+      "desc": "Pi TUI tiered memory system"
+    },
+    {
+      "id": "hermes-workspace",
+      "path": "~/Dropbox/5-HOME/Workspace/hermes_workspace",
+      "type": "infra",
+      "critical": true,
+      "machines": ["ag2i", "t480"],
+      "desc": "Hermes WebUI compose and configs"
+    },
+    {
+      "id": "freyja",
+      "path": "~/Dropbox/5-HOME/Workspace/FREYJA",
+      "type": "project",
+      "critical": true,
+      "machines": ["ag2i"],
+      "desc": "FREYJA OpenAI-compatible backend (AG2i only)"
+    },
+    {
+      "id": "cloud-workspaces",
+      "path": "~/Cloud/04-WORKSPACES",
+      "type": "sync",
+      "critical": false,
+      "machines": ["ag2i", "t480"],
+      "desc": "Cloud-synced workspace mirror"
+    },
+    {
+      "id": "tagnet-codex",
+      "path": "~/Dropbox/2-TAGNET-482/Tagnet-Codex",
+      "type": "project",
+      "critical": false,
+      "machines": ["ag2i", "t480"],
+      "desc": "Tagnet codex and documentation"
+    },
+    {
+      "id": "scripts",
+      "path": "~/Dropbox/7-SCRIPTS",
+      "type": "tool",
+      "critical": false,
+      "machines": ["ag2i", "t480"],
+      "desc": "Shared scripts and tooling"
+    },
+    {
+      "id": "ml-learning",
+      "path": "~/Dropbox/11-MACHINE-LEARNING",
+      "type": "project",
+      "critical": false,
+      "machines": ["ag2i", "t480"],
+      "desc": "Machine learning experiments"
+    },
+    {
+      "id": "seshat-self",
+      "path": "~/Dropbox/9-PROJECTS/seshat",
+      "type": "self",
+      "critical": true,
+      "machines": ["ag2i", "t480"],
+      "desc": "This memory system itself"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# FREYJA — Caddyfile
+# Replace yourdomain.com with your actual domain
+
+yourdomain.com {
+    # Automatic HTTPS via Let's Encrypt
+    tls {
+        on_demand
+    }
+
+    # API + backend
+    handle_path /api/* {
+        reverse_proxy backend:8000
+    }
+
+    # Health
+    handle /health {
+        reverse_proxy backend:8000
+    }
+
+    # OpenAPI docs
+    handle /docs {
+        reverse_proxy backend:8000
+    }
+
+    # Stripe webhook (must be raw body, no compression)
+    handle /api/billing/webhook {
+        reverse_proxy backend:8000 {
+            header_up X-Forwarded-Proto {scheme}
+        }
+    }
+
+    # Static frontend
+    handle {
+        root * /var/www/html
+        try_files {path} /index.html
+        file_server
+    }
+
+    # Logging
+    log {
+        output file /var/log/caddy/access.log
+    }
+}

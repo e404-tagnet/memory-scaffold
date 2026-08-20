@@ -1,0 +1,30 @@
+[2026-07-08T21:41:18+01:00] [t480] === SESHAT Guardian Scan Start ===
+[2026-07-08T20:41:18.110824+00:00] [t480] NEW: projects-root first seen (6 files, 28996 bytes)
+[2026-07-08T20:41:18.113988+00:00] [t480] NEW: pi-memory first seen (87 files, 747186 bytes)
+[2026-07-08T20:41:18.156769+00:00] [t480] NEW: hermes-workspace first seen (1773 files, 27474251 bytes)
+[2026-07-08T20:41:18.164933+00:00] [t480] NEW: cloud-workspaces first seen (68 files, 1119239674 bytes)
+[2026-07-08T20:41:18.184470+00:00] [t480] NEW: tagnet-codex first seen (142 files, 11267470 bytes)
+[2026-07-08T20:41:18.186544+00:00] [t480] NEW: scripts first seen (84 files, 848402 bytes)
+[2026-07-08T20:41:18.219935+00:00] [t480] NEW: ml-learning first seen (529 files, 199330492 bytes)
+[2026-07-08T20:41:18.220327+00:00] [t480] NEW: seshat-self first seen (5 files, 12628 bytes)
+[2026-07-08T20:41:18.220633+00:00] [t480] === Scan Complete: 1 panics, 0 changes ===
+[2026-07-08T21:42:11+01:00] [t480] === SESHAT Guardian Scan Start ===
+[2026-07-08T20:42:11.595573+00:00] [t480] CHANGE: projects-root hash changed | files: +2 | size: +3950 bytes
+[2026-07-08T20:42:11.598140+00:00] [t480] OK: pi-memory unchanged (87 files, 747186 bytes)
+[2026-07-08T20:42:11.638227+00:00] [t480] OK: hermes-workspace unchanged (1773 files, 27474251 bytes)
+[2026-07-08T20:42:11.640414+00:00] [t480] OK: cloud-workspaces unchanged (68 files, 1119239674 bytes)
+[2026-07-08T20:42:11.643877+00:00] [t480] OK: tagnet-codex unchanged (142 files, 11267470 bytes)
+[2026-07-08T20:42:11.647300+00:00] [t480] OK: scripts unchanged (84 files, 848402 bytes)
+[2026-07-08T20:42:11.664098+00:00] [t480] OK: ml-learning unchanged (529 files, 199330492 bytes)
+[2026-07-08T20:42:11.664717+00:00] [t480] CHANGE: seshat-self hash changed | files: +1 | size: +3785 bytes
+[2026-07-08T20:42:11.665177+00:00] [t480] === Scan Complete: 0 panics, 2 changes, 1 skipped ===
+[2026-07-08T21:43:22+01:00] [t480] === SESHAT Guardian Scan Start ===
+[2026-07-08T20:43:22.527436+00:00] [t480] CHANGE: projects-root hash changed | files: +4 | size: +21406 bytes
+[2026-07-08T20:43:22.529619+00:00] [t480] OK: pi-memory unchanged (87 files, 747186 bytes)
+[2026-07-08T20:43:22.568944+00:00] [t480] OK: hermes-workspace unchanged (1773 files, 27474251 bytes)
+[2026-07-08T20:43:22.571227+00:00] [t480] OK: cloud-workspaces unchanged (68 files, 1119239674 bytes)
+[2026-07-08T20:43:22.574537+00:00] [t480] OK: tagnet-codex unchanged (142 files, 11267470 bytes)
+[2026-07-08T20:43:22.576355+00:00] [t480] OK: scripts unchanged (84 files, 848402 bytes)
+[2026-07-08T20:43:22.593673+00:00] [t480] OK: ml-learning unchanged (529 files, 199330492 bytes)
+[2026-07-08T20:43:22.594113+00:00] [t480] CHANGE: seshat-self hash changed | files: +4 | size: +21407 bytes
+[2026-07-08T20:43:22.594479+00:00] [t480] === Scan Complete: 0 panics, 2 changes, 1 skipped ===

@@ -2,7 +2,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=License&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/Status-stable-a6e3a1?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
+[![Status](https://img.shields.io/badge/Status-experimental-fab387?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
 [![Version](https://img.shields.io/github/v/release/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=Version&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/releases)
 [![Repo](https://img.shields.io/badge/Repo-memory-scaffold-94e2d5?labelColor=11111b&style=flat-square&logo=github&logoColor=94e2d5)](https://github.com/e404-tagnet/memory-scaffold)
 [![Tagnet](https://img.shields.io/badge/By-Tagnet-89dceb?labelColor=11111b&style=flat-square&logo=tag&logoColor=89dceb)](https://tagnet.dev)
@@ -10,66 +10,50 @@
 </div>
 <!-- TAGNET README HEADER — end -->
 
-# Memory Scaffold
+# Tagnet Memory Scaffold Archive
 
-A lightweight, tiered memory architecture for LLM coding agents and AI workspaces.
+> *A graveyard, nursery, and breeding ground for persistent-memory ideas — everything from paper-thin prompt templates to full Bayesian middleware.*
 
-## What This Is
+This repository is an **archive and monorepo** of memory-related experiments, scaffolds, and agent control layers built under the Tagnet / e404-tagnet umbrella. Many are old. Some are still useful. A few evolved into live projects elsewhere.
 
-Your LLM session starts blank. Every time. This scaffold fixes that by giving your agent persistent, structured context across sessions — without bloat.
+## What's inside
 
-## Architecture
+| Sub-scaffold | Description |
+|---|---|
+| [`argus-scaffold/`](./argus-scaffold/) | ARGUS |
+| [`basic-memory-scaffold/`](./basic-memory-scaffold/) | Memory Scaffold |
+| [`eq-scaffold/`](./eq-scaffold/) | PRISM |
+| [`freyja-scaffold/`](./freyja-scaffold/) | FREYJA — Companion Chatbot Platform |
+| [`hydra-scaffold/`](./hydra-scaffold/) | Hydra Agent Phase 7 |
+| [`memory-integration-confidence-layer/2-Memory Integrated Tool with Confidence Middleware Layer/`](./memory-integration-confidence-layer/2-Memory Integrated Tool with Confidence Middleware Layer/) | Bayesian Scaffold — Drop-in Middleware for Ollama Agents |
+| [`memory-integration-confidence-layer/3-SCAFFOLD-FULL/`](./memory-integration-confidence-layer/3-SCAFFOLD-FULL/) | Bayesian Scaffold — Full System |
+| [`seshat-scaffold/`](./seshat-scaffold/) | Seshat — E404 Memory System V2 |
 
-```
-┌─────────────────────────────────────────────┐
-│  🔴 RAM Layer (session-cache.md)            │  ← Volatile, loaded FIRST
-│  ├─ Current task state                       │     Overwrite each session
-│  ├─ In-progress items                        │
-│  └─ Scratchpad                               │
-├─────────────────────────────────────────────┤
-│  🟢 ROM Hot Tier (core.md, memories.md)     │  ← Always loaded
-│  ├─ Identity, hardware specs                 │
-│  └─ Learnings, discoveries                   │
-├─────────────────────────────────────────────┤
-│  🟡 ROM Warm Tier (*-notes.md)              │  ← On demand
-│  └─ Domain knowledge                         │
-├─────────────────────────────────────────────┤
-│  ⚪ ROM Cold Tier (archived/)               │  ← Search only
-│  └─ Historical logs                          │
-└─────────────────────────────────────────────┘
-```
+## Where to start
 
-## Files
+- **Just want a simple, copy-paste memory layer?** → [`basic-memory-scaffold/`](./basic-memory-scaffold/)
+- **Want a local LLM with bias detection + routing?** → [`memory-integration-confidence-layer/3-SCAFFOLD-FULL/`](./memory-integration-confidence-layer/3-SCAFFOLD-FULL/) and [`eq-scaffold/`](./eq-scaffold/)
+- **Need a multi-mode founder/operator AI OS?** → [`argus-scaffold/`](./argus-scaffold/)
+- **Building a companion chatbot product?** → [`freyja-scaffold/`](./freyja-scaffold/)
+- **Guarding canonical project directories?** → [`seshat-scaffold/`](./seshat-scaffold/)
 
-| File | Tier | Purpose |
-|------|------|---------|
-| `session-cache.md` | 🔴 RAM | Current session state — overwrite freely |
-| `core.md` | 🟢 HOT | Identity, preferences, hardware |
-| `memories.md` | 🟢 HOT | Accumulated learnings |
-| `*-notes.md` | 🟡 WARM | Domain knowledge, on-demand load |
-| `archived/*` | ⚪ COLD | History, search-only |
+## Status
 
-## Quick Start
+Most of these are **experimental or superseded**. The canonical, maintained versions of the active ideas live in separate repositories (e.g. [`prism-scaffold`](https://github.com/e404-tagnet/prism), [`memory-scaffold` v1](https://github.com/e404-tagnet/memory-scaffold/blob/main/basic-memory-scaffold/README.md)).
 
-1. **Copy this scaffold** into your workspace root
-2. **Fill in the blanks** in `core-template.md` and `memories-template.md`, rename to `core.md` / `memories.md`
-3. **Start each session** with your agent reading `session-cache.md` → `core.md` → `memories.md`
-4. **Update** `session-cache.md` at session end with current state
+Treat this repo as:
+1. **Reference** for how the ideas evolved.
+2. **Parts bin** — steal a file, a prompt, or an idea.
+3. **Archive** — not a product. Expect rough edges.
 
-## Extension (Optional)
+## Layout convention
 
-The included `extension.ts` auto-loads RAM + HOT tiers on agent boot if your environment supports extensions. Install by registering the path in your agent settings.
-
-## Principles
-
-- **Don't paste your whole life** — structured tiers keep context lean
-- **RAM is cheap** — write session state without guilt, overwrite next time
-- **HOT is forever** — identity and learnings accumulate
-- **WARM is optional** — load domain files only when relevant
+Each sub-scaffold keeps its own README, license, and history. Top-level commits preserve the folder structure; nothing inside a subfolder is rewritten to match the others unless it already had its own identity.
 
 ## License
 
-MIT — use it, fork it, improve it.
+Per-subfolder licenses apply where present. Default for original Tagnet work: [MIT](./LICENSE) unless otherwise stated.
+
 
 <!-- TAGNET README FOOTER — start -->
 ---

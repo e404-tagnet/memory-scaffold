@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --freyja-bg: #0f0f1a;
+  --freyja-panel: #1a1a2e;
+  --freyja-accent: #89dceb;
+  --freyja-teal: #94e2d5;
+}
+
+body {
+  background-color: var(--freyja-bg);
+  color: #eee;
+}

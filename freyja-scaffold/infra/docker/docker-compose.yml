@@ -1,0 +1,92 @@
+services:
+  # --- Ollama (GPU or CPU) ---
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+    # Remove deploy block for CPU-only testing
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # --- Backend (FastAPI) ---
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: freyja-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./freyja.db
+      - REDIS_URL=redis://redis:6379/0
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - SECRET_KEY=${SECRET_KEY}
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - STRIPE_PRICE_PREMIUM=${STRIPE_PRICE_PREMIUM}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+    volumes:
+      - freyja_db:/app/data
+    depends_on:
+      - redis
+      - ollama
+
+  # --- Redis ---
+  redis:
+    image: redis:7-alpine
+    container_name: freyja-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+  # --- Caddy (reverse proxy + HTTPS) ---
+  caddy:
+    image: caddy:2-alpine
+    container_name: freyja-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+
+  # --- Open WebUI (optional admin panel) ---
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: freyja-webui
+    restart: unless-stopped
+    ports:
+      - "3000:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY}
+      - ENABLE_SIGNUP=false
+      - DEFAULT_USER_ROLE=pending
+    volumes:
+      - openwebui_data:/app/backend/data
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:
+  freyja_db:
+  redis_data:
+  caddy_data:
+  caddy_config:
+  openwebui_data:

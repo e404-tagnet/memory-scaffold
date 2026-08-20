@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-08T20:43:22.526888+00:00",
+  "hostname": "t480",
+  "entries": {
+    "projects-root": {
+      "path": "/home/e404/Dropbox/9-PROJECTS",
+      "exists": true,
+      "hash": "87eedfb168978b62",
+      "file_count": 12,
+      "total_size": 54352,
+      "dir_count": 7,
+      "critical": true
+    },
+    "pi-memory": {
+      "path": "/home/e404/Dropbox/5-HOME/Workspace/pi_workspace",
+      "exists": true,
+      "hash": "61deeb01e6df16a6",
+      "file_count": 87,
+      "total_size": 747186,
+      "dir_count": 25,
+      "critical": true
+    },
+    "hermes-workspace": {
+      "path": "/home/e404/Dropbox/5-HOME/Workspace/hermes_workspace",
+      "exists": true,
+      "hash": "17824d976d793a9f",
+      "file_count": 1773,
+      "total_size": 27474251,
+      "dir_count": 261,
+      "critical": true
+    },
+    "cloud-workspaces": {
+      "path": "/home/e404/Cloud/04-WORKSPACES",
+      "exists": true,
+      "hash": "95ad78bee569a36b",
+      "file_count": 68,
+      "total_size": 1119239674,
+      "dir_count": 38,
+      "critical": false
+    },
+    "tagnet-codex": {
+      "path": "/home/e404/Dropbox/2-TAGNET-482/Tagnet-Codex",
+      "exists": true,
+      "hash": "eb1e1f9652f91a02",
+      "file_count": 142,
+      "total_size": 11267470,
+      "dir_count": 37,
+      "critical": false
+    },
+    "scripts": {
+      "path": "/home/e404/Dropbox/7-SCRIPTS",
+      "exists": true,
+      "hash": "ee2ef89766bb4e5b",
+      "file_count": 84,
+      "total_size": 848402,
+      "dir_count": 12,
+      "critical": false
+    },
+    "ml-learning": {
+      "path": "/home/e404/Dropbox/11-MACHINE-LEARNING",
+      "exists": true,
+      "hash": "75869e127af9cd7d",
+      "file_count": 529,
+      "total_size": 199330492,
+      "dir_count": 200,
+      "critical": false
+    },
+    "seshat-self": {
+      "path": "/home/e404/Dropbox/9-PROJECTS/seshat",
+      "exists": true,
+      "hash": "6451fd512ff8db00",
+      "file_count": 10,
+      "total_size": 37820,
+      "dir_count": 5,
+      "critical": true
+    }
+  }
+}

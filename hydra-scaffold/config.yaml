@@ -1,0 +1,7 @@
+models:
+  fast: tinyllama
+  deep_a: mistral
+  deep_b: llama2
+
+logging:
+  log_dir: session_logs
