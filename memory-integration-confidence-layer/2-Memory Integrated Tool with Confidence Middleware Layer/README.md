@@ -14,7 +14,6 @@
 
 Three files. One decision layer. Your agent stops being a yes-machine.
 
------
 
 ## Files
 
@@ -25,7 +24,6 @@ Three files. One decision layer. Your agent stops being a yes-machine.
 |`scaffold_example.py`   |Minimal working loop with Ollama                                        |
 |`monitor.html`          |Live visualiser — drop in `scaffold_memory.json` to inspect             |
 
------
 
 ## Drop-in Usage
 
@@ -48,7 +46,6 @@ mw.post_process(response, decision)
 # → updates priors, writes to scaffold_memory.json
 ```
 
------
 
 ## Routes
 
@@ -61,7 +58,6 @@ mw.post_process(response, decision)
 
 Assertiveness drift shifts the balance: the more often the AI gets wrong outcomes, the bolder it becomes — leaning toward `reframe` and `challenge` over `comply`.
 
------
 
 ## Memory Store
 
@@ -74,7 +70,6 @@ Assertiveness drift shifts the balance: the more often the AI gets wrong outcome
 - `outcome_counts` — hit/clarify/wrong history
 - `recent` — rolling 10-entry window for trend detection
 
------
 
 ## Monitor
 
@@ -84,7 +79,6 @@ Open `monitor.html` in any browser.
 - Drop `scaffold_memory.json` onto the upload zone to visualise a live session
 - Shows: belief posteriors, bias radar, outcome distribution, assertiveness dial, route decisions
 
------
 
 ## Swap backends
 
@@ -102,7 +96,6 @@ class SQLiteStore(MemoryStore):
 API is identical. Everything else just works.
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

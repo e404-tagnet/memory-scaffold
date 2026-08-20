@@ -72,7 +72,6 @@ The included `extension.ts` auto-loads RAM + HOT tiers on agent boot if your env
 MIT — use it, fork it, improve it.
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

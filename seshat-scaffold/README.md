@@ -10,11 +10,9 @@
 </div>
 <!-- TAGNET README HEADER — end -->
 
----
 project: seshat
 status: phase-1-active
 created: 2026-07-08
----
 
 # Seshat — E404 Memory System V2
 
@@ -24,7 +22,6 @@ created: 2026-07-08
 
 This is the E404 Memory System V2. Not Pi. Not Hermes. Something better.
 
----
 
 ## Why Seshat?
 
@@ -37,7 +34,6 @@ This is the E404 Memory System V2. Not Pi. Not Hermes. Something better.
 
 Seshat wins because she **measures and records**. That's what this system does: measure the filesystem, record the sessions, guard the canon.
 
----
 
 ## Phase 1 — Guard Rails (ACTIVE)
 
@@ -77,7 +73,6 @@ Seshat wins because she **measures and records**. That's what this system does: 
 | `logs/guardian.log` | Guardian output | ✅ Ready |
 | `logs/alerts.log` | PANIC events | ✅ Ready |
 
----
 
 ## Phase 2 — Distill Pipeline
 
@@ -87,7 +82,6 @@ Auto-extract facts from Hermes JSON sessions → warm/*.md
 
 Visual graph of memory. Timeline view. Sync dashboard.
 
----
 
 ## Canonical Directory Contract
 
@@ -104,7 +98,6 @@ These directories are sacred. If any vanish, Seshat screams.
 ]
 ```
 
----
 
 ## Quick Commands
 
@@ -122,20 +115,17 @@ cat ~/Dropbox/9-PROJECTS/seshat/logs/alerts.log
 cat ~/Dropbox/9-PROJECTS/seshat/config/canon-index.json
 ```
 
----
 
 ## Architecture
 
 See `docs/ARCHITECTURE.md` (copied from pi_workspace design doc).
 
----
 
 **Last updated:** 2026-07-08
 **Status:** Phase 1 implementation in progress
 **Machines:** AG2i (building), T480 (awaiting sync)
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

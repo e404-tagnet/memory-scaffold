@@ -14,7 +14,6 @@
 
 Seven modules. One coherent decision layer between the human and Ollama.
 
------
 
 ## Architecture
 
@@ -40,7 +39,6 @@ Ollama LLM
 MemoryStore write-back → scaffold_memory.json
 ```
 
------
 
 ## Files
 
@@ -58,7 +56,6 @@ MemoryStore write-back → scaffold_memory.json
 |`scaffold_example.py`   |Full wired pipeline                                  |
 |`monitor.html`          |Live session visualiser                              |
 
------
 
 ## Quick start
 
@@ -76,7 +73,6 @@ python eval_harness.py routing
 python eval_harness.py compare
 ```
 
------
 
 ## Routes
 
@@ -87,7 +83,6 @@ python eval_harness.py compare
 |`clarify`  |Insufficient signal                     |Asks one focused question                |
 |`challenge`|Flawed premise / cognitive bias         |Surfaces the flaw, offers reframe        |
 
------
 
 ## Swap classifier
 
@@ -99,7 +94,6 @@ from bias_classifier import SemanticClassifier as _Classifier  # fastest at infe
 from bias_classifier import HybridClassifier as _Classifier    # default, most robust
 ```
 
------
 
 ## Add eval cases from real sessions
 
@@ -117,7 +111,6 @@ suite.add(EvalCase(
 suite.save("eval_cases.json")
 ```
 
------
 
 ## Monitor
 
@@ -125,7 +118,6 @@ Open `monitor.html`, drop `scaffold_memory.json` on it.
 Also works standalone as a manual simulator.
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

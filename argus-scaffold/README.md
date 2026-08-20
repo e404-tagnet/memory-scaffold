@@ -76,7 +76,6 @@ END:    ARGUS generate handoff → paste output into ARGUS_MEMORY.md
 ```
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

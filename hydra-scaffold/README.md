@@ -23,7 +23,6 @@ Usage:
 3. Run `python agent_hydra_control.py`
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

@@ -56,7 +56,6 @@ Per-subfolder licenses apply where present. Default for original Tagnet work: [M
 
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 

@@ -22,7 +22,6 @@ A full-stack AI companion chatbot with user accounts, chat history, tiered acces
 - **Billing:** Stripe checkout → auto-upgrades user tier
 - **Deploy:** Docker Compose with Caddy reverse proxy + HTTPS
 
----
 
 ## 30-Second Start (Local Dev)
 
@@ -70,7 +69,6 @@ ollama pull phi4-mini:latest
 
 Done. Visit `http://localhost:3000`, sign up, and chat.
 
----
 
 ## Production Deploy (Docker)
 
@@ -114,7 +112,6 @@ docker compose restart caddy
 
 Caddy auto-provisions Let's Encrypt certs. No manual cert management.
 
----
 
 ## Configuration
 
@@ -130,7 +127,6 @@ All settings live in `.env`. Key ones:
 | `STRIPE_PRICE_PREMIUM` | Only for billing | Stripe Price ID for premium tier |
 | `ELEVENLABS_API_KEY` | Only for voice | TTS integration |
 
----
 
 ## Project Structure
 
@@ -159,7 +155,6 @@ freyja-scaffold/
 └── .env.example           # Copy me to .env
 ```
 
----
 
 ## API Overview
 
@@ -177,7 +172,6 @@ freyja-scaffold/
 
 Full OpenAPI docs at `/docs` when running.
 
----
 
 ## How Tiers Work
 
@@ -186,7 +180,6 @@ Full OpenAPI docs at `/docs` when running.
 
 Stripe checkout → webhook hits `/api/billing/webhook` → user tier flips to `premium` automatically.
 
----
 
 ## Troubleshooting
 
@@ -203,14 +196,12 @@ Stripe checkout → webhook hits `/api/billing/webhook` → user tier flips to `
 **Frontend shows "Connection refused"**
 - Backend isn't running, or frontend is pointing to the wrong URL. Default expects backend on `localhost:8000`.
 
----
 
 ## License
 
 Private / E404 — Not for redistribution.
 
 <!-- TAGNET README FOOTER — start -->
----
 
 <div align="center">
 
