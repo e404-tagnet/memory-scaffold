@@ -2,7 +2,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=License&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/Status-wip-f9e2af?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
+[![Status](https://img.shields.io/badge/Status-stable-a6e3a1?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
 [![Version](https://img.shields.io/github/v/release/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=Version&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/releases)
 [![Repo](https://img.shields.io/badge/Repo-memory-scaffold-94e2d5?labelColor=11111b&style=flat-square&logo=github&logoColor=94e2d5)](https://github.com/e404-tagnet/memory-scaffold)
 [![Tagnet](https://img.shields.io/badge/By-Tagnet-89dceb?labelColor=11111b&style=flat-square&logo=tag&logoColor=89dceb)](https://tagnet.dev)
@@ -21,7 +21,6 @@ A full-stack AI companion chatbot with user accounts, chat history, tiered acces
 - **AI:** Ollama-compatible (local models, no API keys needed)
 - **Billing:** Stripe checkout → auto-upgrades user tier
 - **Deploy:** Docker Compose with Caddy reverse proxy + HTTPS
-
 
 ## 30-Second Start (Local Dev)
 
@@ -69,7 +68,6 @@ ollama pull phi4-mini:latest
 
 Done. Visit `http://localhost:3000`, sign up, and chat.
 
-
 ## Production Deploy (Docker)
 
 **Requirements:** Docker + Docker Compose
@@ -112,7 +110,6 @@ docker compose restart caddy
 
 Caddy auto-provisions Let's Encrypt certs. No manual cert management.
 
-
 ## Configuration
 
 All settings live in `.env`. Key ones:
@@ -126,7 +123,6 @@ All settings live in `.env`. Key ones:
 | `STRIPE_WEBHOOK_SECRET` | Only for billing | Stripe webhook signing secret |
 | `STRIPE_PRICE_PREMIUM` | Only for billing | Stripe Price ID for premium tier |
 | `ELEVENLABS_API_KEY` | Only for voice | TTS integration |
-
 
 ## Project Structure
 
@@ -155,7 +151,6 @@ freyja-scaffold/
 └── .env.example           # Copy me to .env
 ```
 
-
 ## API Overview
 
 | Method | Path | Auth? | Description |
@@ -172,14 +167,12 @@ freyja-scaffold/
 
 Full OpenAPI docs at `/docs` when running.
 
-
 ## How Tiers Work
 
 - **Basic (default):** 6-turn memory window, limited model access
 - **Premium:** 500-turn memory, all models, voice support
 
 Stripe checkout → webhook hits `/api/billing/webhook` → user tier flips to `premium` automatically.
-
 
 ## Troubleshooting
 
@@ -195,7 +188,6 @@ Stripe checkout → webhook hits `/api/billing/webhook` → user tier flips to `
 
 **Frontend shows "Connection refused"**
 - Backend isn't running, or frontend is pointing to the wrong URL. Default expects backend on `localhost:8000`.
-
 
 ## License
 

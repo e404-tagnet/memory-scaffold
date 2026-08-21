@@ -2,7 +2,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=License&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/Status-experimental-fab387?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
+[![Status](https://img.shields.io/badge/Status-stable-a6e3a1?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
 [![Version](https://img.shields.io/github/v/release/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=Version&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/releases)
 [![Repo](https://img.shields.io/badge/Repo-memory-scaffold-94e2d5?labelColor=11111b&style=flat-square&logo=github&logoColor=94e2d5)](https://github.com/e404-tagnet/memory-scaffold)
 [![Tagnet](https://img.shields.io/badge/By-Tagnet-89dceb?labelColor=11111b&style=flat-square&logo=tag&logoColor=89dceb)](https://tagnet.dev)
@@ -13,7 +13,6 @@
 # Bayesian Scaffold — Full System
 
 Seven modules. One coherent decision layer between the human and Ollama.
-
 
 ## Architecture
 
@@ -39,7 +38,6 @@ Ollama LLM
 MemoryStore write-back → scaffold_memory.json
 ```
 
-
 ## Files
 
 |File                    |Role                                                 |
@@ -55,7 +53,6 @@ MemoryStore write-back → scaffold_memory.json
 |`eval_harness.py`       |Ground truth evaluation suite                        |
 |`scaffold_example.py`   |Full wired pipeline                                  |
 |`monitor.html`          |Live session visualiser                              |
-
 
 ## Quick start
 
@@ -73,7 +70,6 @@ python eval_harness.py routing
 python eval_harness.py compare
 ```
 
-
 ## Routes
 
 |Route      |Trigger                                 |Behaviour                                |
@@ -82,7 +78,6 @@ python eval_harness.py compare
 |`reframe`  |Detectable intent beneath stated request|Produces better answer, notes what it did|
 |`clarify`  |Insufficient signal                     |Asks one focused question                |
 |`challenge`|Flawed premise / cognitive bias         |Surfaces the flaw, offers reframe        |
-
 
 ## Swap classifier
 
@@ -93,7 +88,6 @@ from bias_classifier import LLMClassifier as _Classifier   # most interpretable
 from bias_classifier import SemanticClassifier as _Classifier  # fastest at inference
 from bias_classifier import HybridClassifier as _Classifier    # default, most robust
 ```
-
 
 ## Add eval cases from real sessions
 
@@ -110,7 +104,6 @@ suite.add(EvalCase(
 ))
 suite.save("eval_cases.json")
 ```
-
 
 ## Monitor
 

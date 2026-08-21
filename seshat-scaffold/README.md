@@ -2,7 +2,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=License&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/Status-wip-f9e2af?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
+[![Status](https://img.shields.io/badge/Status-stable-a6e3a1?labelColor=11111b&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/pulse)
 [![Version](https://img.shields.io/github/v/release/e404-tagnet/memory-scaffold?color=313244&labelColor=11111b&label=Version&style=flat-square)](https://github.com/e404-tagnet/memory-scaffold/releases)
 [![Repo](https://img.shields.io/badge/Repo-memory-scaffold-94e2d5?labelColor=11111b&style=flat-square&logo=github&logoColor=94e2d5)](https://github.com/e404-tagnet/memory-scaffold)
 [![Tagnet](https://img.shields.io/badge/By-Tagnet-89dceb?labelColor=11111b&style=flat-square&logo=tag&logoColor=89dceb)](https://tagnet.dev)
@@ -22,7 +22,6 @@ created: 2026-07-08
 
 This is the E404 Memory System V2. Not Pi. Not Hermes. Something better.
 
-
 ## Why Seshat?
 
 | Name | Origin | Meaning | Fit |
@@ -33,7 +32,6 @@ This is the E404 Memory System V2. Not Pi. Not Hermes. Something better.
 | Thoth | Egyptian | Wisdom, writing, magic | Too broad — he's everything |
 
 Seshat wins because she **measures and records**. That's what this system does: measure the filesystem, record the sessions, guard the canon.
-
 
 ## Phase 1 — Guard Rails (ACTIVE)
 
@@ -73,7 +71,6 @@ Seshat wins because she **measures and records**. That's what this system does: 
 | `logs/guardian.log` | Guardian output | ✅ Ready |
 | `logs/alerts.log` | PANIC events | ✅ Ready |
 
-
 ## Phase 2 — Distill Pipeline
 
 Auto-extract facts from Hermes JSON sessions → warm/*.md
@@ -81,7 +78,6 @@ Auto-extract facts from Hermes JSON sessions → warm/*.md
 ## Phase 3 — GUI
 
 Visual graph of memory. Timeline view. Sync dashboard.
-
 
 ## Canonical Directory Contract
 
@@ -97,7 +93,6 @@ These directories are sacred. If any vanish, Seshat screams.
   "~/Cloud/04-WORKSPACES/"
 ]
 ```
-
 
 ## Quick Commands
 
@@ -115,11 +110,9 @@ cat ~/Dropbox/9-PROJECTS/seshat/logs/alerts.log
 cat ~/Dropbox/9-PROJECTS/seshat/config/canon-index.json
 ```
 
-
 ## Architecture
 
 See `docs/ARCHITECTURE.md` (copied from pi_workspace design doc).
-
 
 **Last updated:** 2026-07-08
 **Status:** Phase 1 implementation in progress
