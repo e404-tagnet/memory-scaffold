@@ -86,7 +86,7 @@ These directories are sacred. If any vanish, Seshat screams.
 ```json
 // config/canon-dirs.json
 [
-  "~/Dropbox/9-PROJECTS/",
+  "~/Cloud/Git-Repos/",
   "~/Dropbox/5-HOME/Workspace/pi_workspace/",
   "~/Dropbox/5-HOME/Workspace/hermes_workspace/",
   "~/Dropbox/5-HOME/Workspace/FREYJA/",
@@ -98,16 +98,16 @@ These directories are sacred. If any vanish, Seshat screams.
 
 ```bash
 # Run guardian manually
-~/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh
 
 # Sync pi_workspace to hermes backup
-~/Dropbox/9-PROJECTS/seshat/src/pi-sync-to-hermes.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/pi-sync-to-hermes.sh
 
 # Check alerts
-cat ~/Dropbox/9-PROJECTS/seshat/logs/alerts.log
+cat ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/logs/alerts.log
 
 # View canon index
-cat ~/Dropbox/9-PROJECTS/seshat/config/canon-index.json
+cat ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/config/canon-index.json
 ```
 
 ## Architecture

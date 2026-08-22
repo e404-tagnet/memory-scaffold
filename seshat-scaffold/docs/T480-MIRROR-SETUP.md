@@ -9,7 +9,7 @@ created: 2026-07-08
 ## What Already Syncs (Dropbox)
 
 These directories sync automatically via Dropbox:
-- `~/Dropbox/9-PROJECTS/seshat/` — this project ✅
+- `~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/` — this project ✅
 - `~/Dropbox/5-HOME/Workspace/pi_workspace/` — Pi memory ✅
 - `~/Dropbox/5-HOME/Workspace/hermes_workspace/` — Hermes compose ✅
 
@@ -18,14 +18,14 @@ These directories sync automatically via Dropbox:
 ### 1. Verify Seshat Arrived
 
 ```bash
-ls -la ~/Dropbox/9-PROJECTS/seshat/
+ls -la ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/
 # Should show: README.md, config/, src/, docs/, logs/
 ```
 
 ### 2. Run Guardian Once (Test)
 
 ```bash
-~/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh
 ```
 
 **Expected:** All green except:
@@ -39,10 +39,10 @@ ls -la ~/Dropbox/9-PROJECTS/seshat/
 crontab -e
 
 # Add this line:
-*/5 * * * * /home/e404/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh >/dev/null 2>&1
+*/5 * * * * /home/e404/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh >/dev/null 2>&1
 
 # Add hourly sync:
-0 * * * * /home/e404/Dropbox/9-PROJECTS/seshat/src/pi-sync-to-hermes.sh >/dev/null 2>&1
+0 * * * * /home/e404/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/pi-sync-to-hermes.sh >/dev/null 2>&1
 ```
 
 ### 4. Verify Cron
@@ -54,7 +54,7 @@ crontab -l | grep seshat
 ### 5. Check Alerts
 
 ```bash
-cat ~/Dropbox/9-PROJECTS/seshat/logs/alerts.log
+cat ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/logs/alerts.log
 ```
 
 Should be empty (or only show old AG2i-only warnings that are now skipped).

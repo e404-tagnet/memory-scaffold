@@ -180,7 +180,7 @@ PHASE 3 — GUI (When Ready)
 ## 4. File Locations (Both Machines)
 
 ```
-~/Dropbox/9-PROJECTS/seshat/
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/
 ├── README.md
 ├── config/
 │   ├── canon-dirs.json       ← sacred contract
@@ -222,16 +222,16 @@ PHASE 3 — GUI (When Ready)
 
 ```bash
 # Run guardian manually
-~/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh
 
 # Sync pi_workspace to hermes backup
-~/Dropbox/9-PROJECTS/seshat/src/pi-sync-to-hermes.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/pi-sync-to-hermes.sh
 
 # Check alerts
-cat ~/Dropbox/9-PROJECTS/seshat/logs/alerts.log
+cat ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/logs/alerts.log
 
 # View canon index
-cat ~/Dropbox/9-PROJECTS/seshat/config/canon-index.json
+cat ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/config/canon-index.json
 ```
 
 ---

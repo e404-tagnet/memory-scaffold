@@ -10,7 +10,7 @@
   "directories": [
     {
       "id": "projects-root",
-      "path": "~/Dropbox/9-PROJECTS",
+      "path": "~/Cloud/Git-Repos",
       "type": "project",
       "critical": true,
       "machines": ["ag2i", "t480"],
@@ -74,7 +74,7 @@
     },
     {
       "id": "seshat-self",
-      "path": "~/Dropbox/9-PROJECTS/seshat",
+      "path": "~/Cloud/Git-Repos/seshat",
       "type": "self",
       "critical": true,
       "machines": ["ag2i", "t480"],

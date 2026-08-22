@@ -66,11 +66,11 @@ This document maps every program, config, and script that hardcodes a Dropbox pa
 
 ---
 
-### `~/Dropbox/9-PROJECTS/`
+### `~/Cloud/Git-Repos/`
 
 | What Hardcodes It | File | Exact Reference |
 |---|---|---|
-| **Seshat self** | `seshat/config/canon-dirs.json` | `path: ~/Dropbox/9-PROJECTS` |
+| **Seshat self** | `seshat/config/canon-dirs.json` | `path: ~/Cloud/Git-Repos` |
 | **Seshat self** | `seshat/src/*.sh` | `SESHAT_ROOT="${HOME}/Dropbox/9-PROJECTS/seshat"` |
 | **Seshat README** | `workspace README` | `cd ~/9-PROJECTS/Akkadia` (outdated — now Akkadia is in home dir) |
 
@@ -182,10 +182,10 @@ update-desktop-database ~/.local/share/applications/
 vim ~/.pi/agent/settings.json
 
 # 5. Update Seshat config
-vim ~/Dropbox/9-PROJECTS/seshat/config/canon-dirs.json
+vim ~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/config/canon-dirs.json
 
 # 6. Run guardian to verify
-~/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh
+~/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh
 ```
 
 ---

@@ -1,12 +1,12 @@
 #!/bin/bash
 # SESHAT fs-guardian.sh — Phase 1
 # Scans canonical directories. Alerts on anomalies.
-# Run via cron: */5 * * * * /home/e404/Dropbox/9-PROJECTS/seshat/src/fs-guardian.sh
+# Run via cron: */5 * * * * /home/e404/Cloud/Git-Repos/memory-scaffold/seshat-scaffold/src/fs-guardian.sh
 # Or manually when needed.
 
 set -euo pipefail
 
-SESHAT_ROOT="${HOME}/Dropbox/9-PROJECTS/seshat"
+SESHAT_ROOT="${HOME}/Cloud/Git-Repos/memory-scaffold/seshat-scaffold"
 CANON_CONFIG="${SESHAT_ROOT}/config/canon-dirs.json"
 CANON_INDEX="${SESHAT_ROOT}/config/canon-index.json"
 GUARDIAN_LOG="${SESHAT_ROOT}/logs/guardian.log"
@@ -41,7 +41,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 home = str(Path.home())
-root = Path(home) / "Dropbox/9-PROJECTS/seshat"
+root = Path(home) / "Cloud/Git-Repos/memory-scaffold/seshat-scaffold"
 config_path = root / "config/canon-dirs.json"
 index_path = root / "config/canon-index.json"
 guardian_log = root / "logs/guardian.log"
