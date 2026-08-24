@@ -10,7 +10,7 @@
   "directories": [
     {
       "id": "projects-root",
-      "path": "~/Cloud/Git-Repos",
+      "path": "~/Cloud/GIT-REPOS",
       "type": "project",
       "critical": true,
       "machines": ["ag2i", "t480"],
@@ -74,7 +74,7 @@
     },
     {
       "id": "seshat-self",
-      "path": "~/Cloud/Git-Repos/seshat",
+      "path": "~/Cloud/GIT-REPOS/seshat",
       "type": "self",
       "critical": true,
       "machines": ["ag2i", "t480"],

@@ -4,7 +4,7 @@
   "hostname": "t480",
   "entries": {
     "projects-root": {
-      "path": "/home/e404/Cloud/Git-Repos",
+      "path": "/home/e404/Cloud/GIT-REPOS",
       "exists": true,
       "hash": "87eedfb168978b62",
       "file_count": 12,
@@ -67,7 +67,7 @@
       "critical": false
     },
     "seshat-self": {
-      "path": "/home/e404/Cloud/Git-Repos/seshat",
+      "path": "/home/e404/Cloud/GIT-REPOS/seshat",
       "exists": true,
       "hash": "6451fd512ff8db00",
       "file_count": 10,

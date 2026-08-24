@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-SESHAT_ROOT="${HOME}/Cloud/Git-Repos/memory-scaffold/seshat-scaffold"
+SESHAT_ROOT="${HOME}/Cloud/GIT-REPOS/memory-scaffold/seshat-scaffold"
 PI_WORKSPACE="${HOME}/Dropbox/5-HOME/Workspace/pi_workspace"
 HERMES_SCAFFOLD="${HOME}/Dropbox/5-HOME/Workspace/hermes-data/pi-scaffold"
 LOG="${SESHAT_ROOT}/logs/sync.log"
